@@ -1,0 +1,12 @@
+extends layout
+block content
+  #banner.page-header
+    .row
+      .col-md-6.col-sm-12
+        h1= "Sign In"
+    .row
+      .col-md-6.col-sm-12
+        form(method="post")
+          input(type="email" placeholder="email" name="email" ).input-medium
+          input(type="password" placeholder="password" name="password").input-medium
+          button(type="submit").btn="Go"
